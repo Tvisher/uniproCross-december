@@ -1,0 +1,4430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./app.min.css" />
+  </head>
+
+  <body>
+    <div
+      class="container"
+      style="
+        max-width: 1170px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+      "
+    >
+      <div class="crossword-board-container">
+        <div class="crossword-board-wrap">
+          <div class="crossword-board">
+            <span class="crossword-board__item--blank" id="item1-1"></span
+            ><span class="crossword-board__item--blank" id="item1-2"></span
+            ><span class="crossword-board__item--blank" id="item1-3"></span
+            ><span class="crossword-board__item--blank" id="item1-4"></span
+            ><span class="crossword-board__item--blank" id="item1-5"></span
+            ><span class="crossword-board__item--blank" id="item1-6"></span
+            ><span class="crossword-board__item--blank" id="item1-7"></span
+            ><span class="crossword-board__item--blank" id="item1-8"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item1-9"
+            /><span class="crossword-board__item--blank" id="item1-10"></span
+            ><span class="crossword-board__item--blank" id="item1-11"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[вВ]{1}$"
+              required="required"
+              value=""
+              id="item1-12"
+            /><span class="crossword-board__item--blank" id="item1-13"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[тТ]{1}$"
+              required="required"
+              value=""
+              id="item1-14"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item1-15"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[йЙ]{1}$"
+              required="required"
+              value=""
+              id="item1-16"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[лЛ]{1}$"
+              required="required"
+              value=""
+              id="item1-17"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item1-18"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[нН]{1}$"
+              required="required"
+              value=""
+              id="item1-19"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[дД]{1}$"
+              required="required"
+              value=""
+              id="item1-20"
+            /><span class="crossword-board__item--blank" id="item1-21"></span
+            ><span class="crossword-board__item--blank" id="item1-22"></span
+            ><span class="crossword-board__item--blank" id="item1-23"></span
+            ><span class="crossword-board__item--blank" id="item1-24"></span
+            ><span class="crossword-board__item--blank" id="item1-25"></span
+            ><span class="crossword-board__item--blank" id="item1-26"></span
+            ><span class="crossword-board__item--blank" id="item2-1"></span
+            ><span class="crossword-board__item--blank" id="item2-2"></span
+            ><span class="crossword-board__item--blank" id="item2-3"></span
+            ><span class="crossword-board__item--blank" id="item2-4"></span
+            ><span class="crossword-board__item--blank" id="item2-5"></span
+            ><span class="crossword-board__item--blank" id="item2-6"></span
+            ><span class="crossword-board__item--blank" id="item2-7"></span
+            ><span class="crossword-board__item--blank" id="item2-8"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[пП]{1}$"
+              required="required"
+              value=""
+              id="item2-9"
+            /><span class="crossword-board__item--blank" id="item2-10"></span
+            ><span class="crossword-board__item--blank" id="item2-11"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item2-12"
+            /><span class="crossword-board__item--blank" id="item2-13"></span
+            ><span class="crossword-board__item--blank" id="item2-14"></span
+            ><span class="crossword-board__item--blank" id="item2-15"></span
+            ><span class="crossword-board__item--blank" id="item2-16"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[уУ]{1}$"
+              required="required"
+              value=""
+              id="item2-17"
+            /><span class="crossword-board__item--blank" id="item2-18"></span
+            ><span class="crossword-board__item--blank" id="item2-19"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item2-20"
+            /><span class="crossword-board__item--blank" id="item2-21"></span
+            ><span class="crossword-board__item--blank" id="item2-22"></span
+            ><span class="crossword-board__item--blank" id="item2-23"></span
+            ><span class="crossword-board__item--blank" id="item2-24"></span
+            ><span class="crossword-board__item--blank" id="item2-25"></span
+            ><span class="crossword-board__item--blank" id="item2-26"></span
+            ><span class="crossword-board__item--blank" id="item3-1"></span
+            ><span class="crossword-board__item--blank" id="item3-2"></span
+            ><span class="crossword-board__item--blank" id="item3-3"></span
+            ><span class="crossword-board__item--blank" id="item3-4"></span
+            ><span class="crossword-board__item--blank" id="item3-5"></span
+            ><span class="crossword-board__item--blank" id="item3-6"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[кК]{1}$"
+              required="required"
+              value=""
+              id="item3-7"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[уУ]{1}$"
+              required="required"
+              value=""
+              id="item3-8"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[рР]{1}$"
+              required="required"
+              value=""
+              id="item3-9"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item3-10"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[нН]{1}$"
+              required="required"
+              value=""
+              id="item3-11"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[тТ]{1}$"
+              required="required"
+              value=""
+              id="item3-12"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[ыЫ]{1}$"
+              required="required"
+              value=""
+              id="item3-13"
+            /><span class="crossword-board__item--blank" id="item3-14"></span
+            ><span class="crossword-board__item--blank" id="item3-15"></span
+            ><span class="crossword-board__item--blank" id="item3-16"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[кК]{1}$"
+              required="required"
+              value=""
+              id="item3-17"
+            /><span class="crossword-board__item--blank" id="item3-18"></span
+            ><span class="crossword-board__item--blank" id="item3-19"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[бБ]{1}$"
+              required="required"
+              value=""
+              id="item3-20"
+            /><span class="crossword-board__item--blank" id="item3-21"></span
+            ><span class="crossword-board__item--blank" id="item3-22"></span
+            ><span class="crossword-board__item--blank" id="item3-23"></span
+            ><span class="crossword-board__item--blank" id="item3-24"></span
+            ><span class="crossword-board__item--blank" id="item3-25"></span
+            ><span class="crossword-board__item--blank" id="item3-26"></span
+            ><span class="crossword-board__item--blank" id="item4-1"></span
+            ><span class="crossword-board__item--blank" id="item4-2"></span
+            ><span class="crossword-board__item--blank" id="item4-3"></span
+            ><span class="crossword-board__item--blank" id="item4-4"></span
+            ><span class="crossword-board__item--blank" id="item4-5"></span
+            ><span class="crossword-board__item--blank" id="item4-6"></span
+            ><span class="crossword-board__item--blank" id="item4-7"></span
+            ><span class="crossword-board__item--blank" id="item4-8"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item4-9"
+            /><span class="crossword-board__item--blank" id="item4-10"></span
+            ><span class="crossword-board__item--blank" id="item4-11"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[кК]{1}$"
+              required="required"
+              value=""
+              id="item4-12"
+            /><span class="crossword-board__item--blank" id="item4-13"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[вВ]{1}$"
+              required="required"
+              value=""
+              id="item4-14"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item4-15"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[нН]{1}$"
+              required="required"
+              value=""
+              id="item4-16"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item4-17"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[тТ]{1}$"
+              required="required"
+              value=""
+              id="item4-18"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[уУ]{1}$"
+              required="required"
+              value=""
+              id="item4-19"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[рР]{1}$"
+              required="required"
+              value=""
+              id="item4-20"
+            /><span class="crossword-board__item--blank" id="item4-21"></span
+            ><span class="crossword-board__item--blank" id="item4-22"></span
+            ><span class="crossword-board__item--blank" id="item4-23"></span
+            ><span class="crossword-board__item--blank" id="item4-24"></span
+            ><span class="crossword-board__item--blank" id="item4-25"></span
+            ><span class="crossword-board__item--blank" id="item4-26"></span
+            ><span class="crossword-board__item--blank" id="item5-1"></span
+            ><span class="crossword-board__item--blank" id="item5-2"></span
+            ><span class="crossword-board__item--blank" id="item5-3"></span
+            ><span class="crossword-board__item--blank" id="item5-4"></span
+            ><span class="crossword-board__item--blank" id="item5-5"></span
+            ><span class="crossword-board__item--blank" id="item5-6"></span
+            ><span class="crossword-board__item--blank" id="item5-7"></span
+            ><span class="crossword-board__item--blank" id="item5-8"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[лЛ]{1}$"
+              required="required"
+              value=""
+              id="item5-9"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item5-10"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[пП]{1}$"
+              required="required"
+              value=""
+              id="item5-11"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item5-12"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[тТ]{1}$"
+              required="required"
+              value=""
+              id="item5-13"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item5-14"
+            /><span class="crossword-board__item--blank" id="item5-15"></span
+            ><span class="crossword-board__item--blank" id="item5-16"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[шШ]{1}$"
+              required="required"
+              value=""
+              id="item5-17"
+            /><span class="crossword-board__item--blank" id="item5-18"></span
+            ><span class="crossword-board__item--blank" id="item5-19"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item5-20"
+            /><span class="crossword-board__item--blank" id="item5-21"></span
+            ><span class="crossword-board__item--blank" id="item5-22"></span
+            ><span class="crossword-board__item--blank" id="item5-23"></span
+            ><span class="crossword-board__item--blank" id="item5-24"></span
+            ><span class="crossword-board__item--blank" id="item5-25"></span
+            ><span class="crossword-board__item--blank" id="item5-26"></span
+            ><span class="crossword-board__item--blank" id="item6-1"></span
+            ><span class="crossword-board__item--blank" id="item6-2"></span
+            ><span class="crossword-board__item--blank" id="item6-3"></span
+            ><span class="crossword-board__item--blank" id="item6-4"></span
+            ><span class="crossword-board__item--blank" id="item6-5"></span
+            ><span class="crossword-board__item--blank" id="item6-6"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item6-7"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[лЛ]{1}$"
+              required="required"
+              value=""
+              id="item6-8"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[ьЬ]{1}$"
+              required="required"
+              value=""
+              id="item6-9"
+            /><span class="crossword-board__item--blank" id="item6-10"></span
+            ><span class="crossword-board__item--blank" id="item6-11"></span
+            ><span class="crossword-board__item--blank" id="item6-12"></span
+            ><span class="crossword-board__item--blank" id="item6-13"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[тТ]{1}$"
+              required="required"
+              value=""
+              id="item6-14"
+            /><span class="crossword-board__item--blank" id="item6-15"></span
+            ><span class="crossword-board__item--blank" id="item6-16"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[иИ]{1}$"
+              required="required"
+              value=""
+              id="item6-17"
+            /><span class="crossword-board__item--blank" id="item6-18"></span
+            ><span class="crossword-board__item--blank" id="item6-19"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[дД]{1}$"
+              required="required"
+              value=""
+              id="item6-20"
+            /><span class="crossword-board__item--blank" id="item6-21"></span
+            ><span class="crossword-board__item--blank" id="item6-22"></span
+            ><span class="crossword-board__item--blank" id="item6-23"></span
+            ><span class="crossword-board__item--blank" id="item6-24"></span
+            ><span class="crossword-board__item--blank" id="item6-25"></span
+            ><span class="crossword-board__item--blank" id="item6-26"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[вВ]{1}$"
+              required="required"
+              value=""
+              id="item7-1"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item7-2"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[нН]{1}$"
+              required="required"
+              value=""
+              id="item7-3"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item7-4"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[кК]{1}$"
+              required="required"
+              value=""
+              id="item7-5"
+            /><span class="crossword-board__item--blank" id="item7-6"></span
+            ><span class="crossword-board__item--blank" id="item7-7"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item7-8"
+            /><span class="crossword-board__item--blank" id="item7-9"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[ёЁ]{1}$"
+              required="required"
+              value=""
+              id="item7-10"
+            /><span class="crossword-board__item--blank" id="item7-11"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[дД]{1}$"
+              required="required"
+              value=""
+              id="item7-12"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[рР]{1}$"
+              required="required"
+              value=""
+              id="item7-13"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item7-14"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[кК]{1}$"
+              required="required"
+              value=""
+              id="item7-15"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item7-16"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[нН]{1}$"
+              required="required"
+              value=""
+              id="item7-17"
+            /><span class="crossword-board__item--blank" id="item7-18"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[дД]{1}$"
+              required="required"
+              value=""
+              id="item7-19"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item7-20"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[тТ]{1}$"
+              required="required"
+              value=""
+              id="item7-21"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[сС]{1}$"
+              required="required"
+              value=""
+              id="item7-22"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[тТ]{1}$"
+              required="required"
+              value=""
+              id="item7-23"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[вВ]{1}$"
+              required="required"
+              value=""
+              id="item7-24"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item7-25"
+            /><span class="crossword-board__item--blank" id="item7-26"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item8-1"
+            /><span class="crossword-board__item--blank" id="item8-2"></span
+            ><span class="crossword-board__item--blank" id="item8-3"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[мМ]{1}$"
+              required="required"
+              value=""
+              id="item8-4"
+            /><span class="crossword-board__item--blank" id="item8-5"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[нН]{1}$"
+              required="required"
+              value=""
+              id="item8-6"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item8-7"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[пП]{1}$"
+              required="required"
+              value=""
+              id="item8-8"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item8-9"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[лЛ]{1}$"
+              required="required"
+              value=""
+              id="item8-10"
+            /><span class="crossword-board__item--blank" id="item8-11"></span
+            ><span class="crossword-board__item--blank" id="item8-12"></span
+            ><span class="crossword-board__item--blank" id="item8-13"></span
+            ><span class="crossword-board__item--blank" id="item8-14"></span
+            ><span class="crossword-board__item--blank" id="item8-15"></span
+            ><span class="crossword-board__item--blank" id="item8-16"></span
+            ><span class="crossword-board__item--blank" id="item8-17"></span
+            ><span class="crossword-board__item--blank" id="item8-18"></span
+            ><span class="crossword-board__item--blank" id="item8-19"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[тТ]{1}$"
+              required="required"
+              value=""
+              id="item8-20"
+            /><span class="crossword-board__item--blank" id="item8-21"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[нН]{1}$"
+              required="required"
+              value=""
+              id="item8-22"
+            /><span class="crossword-board__item--blank" id="item8-23"></span
+            ><span class="crossword-board__item--blank" id="item8-24"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item8-25"
+            /><span class="crossword-board__item--blank" id="item8-26"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[нН]{1}$"
+              required="required"
+              value=""
+              id="item9-1"
+            /><span class="crossword-board__item--blank" id="item9-2"></span
+            ><span class="crossword-board__item--blank" id="item9-3"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item9-4"
+            /><span class="crossword-board__item--blank" id="item9-5"></span
+            ><span class="crossword-board__item--blank" id="item9-6"></span
+            ><span class="crossword-board__item--blank" id="item9-7"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[лЛ]{1}$"
+              required="required"
+              value=""
+              id="item9-8"
+            /><span class="crossword-board__item--blank" id="item9-9"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[кК]{1}$"
+              required="required"
+              value=""
+              id="item9-10"
+            /><span class="crossword-board__item--blank" id="item9-11"></span
+            ><span class="crossword-board__item--blank" id="item9-12"></span
+            ><span class="crossword-board__item--blank" id="item9-13"></span
+            ><span class="crossword-board__item--blank" id="item9-14"></span
+            ><span class="crossword-board__item--blank" id="item9-15"></span
+            ><span class="crossword-board__item--blank" id="item9-16"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[шШ]{1}$"
+              required="required"
+              value=""
+              id="item9-17"
+            /><span class="crossword-board__item--blank" id="item9-18"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[рР]{1}$"
+              required="required"
+              value=""
+              id="item9-19"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item9-20"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[вВ]{1}$"
+              required="required"
+              value=""
+              id="item9-21"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item9-22"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[йЙ]{1}$"
+              required="required"
+              value=""
+              id="item9-23"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item9-24"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[нН]{1}$"
+              required="required"
+              value=""
+              id="item9-25"
+            /><span class="crossword-board__item--blank" id="item9-26"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[гГ]{1}$"
+              required="required"
+              value=""
+              id="item10-1"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[иИ]{1}$"
+              required="required"
+              value=""
+              id="item10-2"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[рР]{1}$"
+              required="required"
+              value=""
+              id="item10-3"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[лЛ]{1}$"
+              required="required"
+              value=""
+              id="item10-4"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[яЯ]{1}$"
+              required="required"
+              value=""
+              id="item10-5"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[нН]{1}$"
+              required="required"
+              value=""
+              id="item10-6"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[дД]{1}$"
+              required="required"
+              value=""
+              id="item10-7"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item10-8"
+            /><span class="crossword-board__item--blank" id="item10-9"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item10-10"
+            /><span class="crossword-board__item--blank" id="item10-11"></span
+            ><span class="crossword-board__item--blank" id="item10-12"></span
+            ><span class="crossword-board__item--blank" id="item10-13"></span
+            ><span class="crossword-board__item--blank" id="item10-14"></span
+            ><span class="crossword-board__item--blank" id="item10-15"></span
+            ><span class="crossword-board__item--blank" id="item10-16"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[уУ]{1}$"
+              required="required"
+              value=""
+              id="item10-17"
+            /><span class="crossword-board__item--blank" id="item10-18"></span
+            ><span class="crossword-board__item--blank" id="item10-19"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[лЛ]{1}$"
+              required="required"
+              value=""
+              id="item10-20"
+            /><span class="crossword-board__item--blank" id="item10-21"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[гГ]{1}$"
+              required="required"
+              value=""
+              id="item10-22"
+            /><span class="crossword-board__item--blank" id="item10-23"></span
+            ><span class="crossword-board__item--blank" id="item10-24"></span
+            ><span class="crossword-board__item--blank" id="item10-25"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[иИ]{1}$"
+              required="required"
+              value=""
+              id="item10-26"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[рР]{1}$"
+              required="required"
+              value=""
+              id="item11-1"
+            /><span class="crossword-board__item--blank" id="item11-2"></span
+            ><span class="crossword-board__item--blank" id="item11-3"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item11-4"
+            /><span class="crossword-board__item--blank" id="item11-5"></span
+            ><span class="crossword-board__item--blank" id="item11-6"></span
+            ><span class="crossword-board__item--blank" id="item11-7"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[нН]{1}$"
+              required="required"
+              value=""
+              id="item11-8"
+            /><span class="crossword-board__item--blank" id="item11-9"></span
+            ><span class="crossword-board__item--blank" id="item11-10"></span
+            ><span class="crossword-board__item--blank" id="item11-11"></span
+            ><span class="crossword-board__item--blank" id="item11-12"></span
+            ><span class="crossword-board__item--blank" id="item11-13"></span
+            ><span class="crossword-board__item--blank" id="item11-14"></span
+            ><span class="crossword-board__item--blank" id="item11-15"></span
+            ><span class="crossword-board__item--blank" id="item11-16"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[бБ]{1}$"
+              required="required"
+              value=""
+              id="item11-17"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[ыЫ]{1}$"
+              required="required"
+              value=""
+              id="item11-18"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[лЛ]{1}$"
+              required="required"
+              value=""
+              id="item11-19"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[ьЬ]{1}$"
+              required="required"
+              value=""
+              id="item11-20"
+            /><span class="crossword-board__item--blank" id="item11-21"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[уУ]{1}$"
+              required="required"
+              value=""
+              id="item11-22"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[сС]{1}$"
+              required="required"
+              value=""
+              id="item11-23"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[тТ]{1}$"
+              required="required"
+              value=""
+              id="item11-24"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[юЮ]{1}$"
+              required="required"
+              value=""
+              id="item11-25"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[гГ]{1}$"
+              required="required"
+              value=""
+              id="item11-26"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[иИ]{1}$"
+              required="required"
+              value=""
+              id="item12-1"
+            /><span class="crossword-board__item--blank" id="item12-2"></span
+            ><span class="crossword-board__item--blank" id="item12-3"></span
+            ><span class="crossword-board__item--blank" id="item12-4"></span
+            ><span class="crossword-board__item--blank" id="item12-5"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[вВ]{1}$"
+              required="required"
+              value=""
+              id="item12-6"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item12-7"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[дД]{1}$"
+              required="required"
+              value=""
+              id="item12-8"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[рР]{1}$"
+              required="required"
+              value=""
+              id="item12-9"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item12-10"
+            /><span class="crossword-board__item--blank" id="item12-11"></span
+            ><span class="crossword-board__item--blank" id="item12-12"></span
+            ><span class="crossword-board__item--blank" id="item12-13"></span
+            ><span class="crossword-board__item--blank" id="item12-14"></span
+            ><span class="crossword-board__item--blank" id="item12-15"></span
+            ><span class="crossword-board__item--blank" id="item12-16"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item12-17"
+            /><span class="crossword-board__item--blank" id="item12-18"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item12-19"
+            /><span class="crossword-board__item--blank" id="item12-20"></span
+            ><span class="crossword-board__item--blank" id="item12-21"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[рР]{1}$"
+              required="required"
+              value=""
+              id="item12-22"
+            /><span class="crossword-board__item--blank" id="item12-23"></span
+            ><span class="crossword-board__item--blank" id="item12-24"></span
+            ><span class="crossword-board__item--blank" id="item12-25"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[рР]{1}$"
+              required="required"
+              value=""
+              id="item12-26"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[яЯ]{1}$"
+              required="required"
+              value=""
+              id="item13-1"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[кК]{1}$"
+              required="required"
+              value=""
+              id="item13-2"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[уУ]{1}$"
+              required="required"
+              value=""
+              id="item13-3"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[тТ]{1}$"
+              required="required"
+              value=""
+              id="item13-4"
+            /><span class="crossword-board__item--blank" id="item13-5"></span
+            ><span class="crossword-board__item--blank" id="item13-6"></span
+            ><span class="crossword-board__item--blank" id="item13-7"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[иИ]{1}$"
+              required="required"
+              value=""
+              id="item13-8"
+            /><span class="crossword-board__item--blank" id="item13-9"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[сС]{1}$"
+              required="required"
+              value=""
+              id="item13-10"
+            /><span class="crossword-board__item--blank" id="item13-11"></span
+            ><span class="crossword-board__item--blank" id="item13-12"></span
+            ><span class="crossword-board__item--blank" id="item13-13"></span
+            ><span class="crossword-board__item--blank" id="item13-14"></span
+            ><span class="crossword-board__item--blank" id="item13-15"></span
+            ><span class="crossword-board__item--blank" id="item13-16"></span
+            ><span class="crossword-board__item--blank" id="item13-17"></span
+            ><span class="crossword-board__item--blank" id="item13-18"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[пП]{1}$"
+              required="required"
+              value=""
+              id="item13-19"
+            /><span class="crossword-board__item--blank" id="item13-20"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[тТ]{1}$"
+              required="required"
+              value=""
+              id="item13-21"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item13-22"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[рР]{1}$"
+              required="required"
+              value=""
+              id="item13-23"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[тТ]{1}$"
+              required="required"
+              value=""
+              id="item13-24"
+            /><span class="crossword-board__item--blank" id="item13-25"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[уУ]{1}$"
+              required="required"
+              value=""
+              id="item13-26"
+            /><span class="crossword-board__item--blank" id="item14-1"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item14-2"
+            /><span class="crossword-board__item--blank" id="item14-3"></span
+            ><span class="crossword-board__item--blank" id="item14-4"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[кК]{1}$"
+              required="required"
+              value=""
+              id="item14-5"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item14-6"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[лЛ]{1}$"
+              required="required"
+              value=""
+              id="item14-7"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[яЯ]{1}$"
+              required="required"
+              value=""
+              id="item14-8"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[дД]{1}$"
+              required="required"
+              value=""
+              id="item14-9"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[кК]{1}$"
+              required="required"
+              value=""
+              id="item14-10"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[иИ]{1}$"
+              required="required"
+              value=""
+              id="item14-11"
+            /><span class="crossword-board__item--blank" id="item14-12"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[сС]{1}$"
+              required="required"
+              value=""
+              id="item14-13"
+            /><span class="crossword-board__item--blank" id="item14-14"></span
+            ><span class="crossword-board__item--blank" id="item14-15"></span
+            ><span class="crossword-board__item--blank" id="item14-16"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[вВ]{1}$"
+              required="required"
+              value=""
+              id="item14-17"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[иИ]{1}$"
+              required="required"
+              value=""
+              id="item14-18"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[нН]{1}$"
+              required="required"
+              value=""
+              id="item14-19"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item14-20"
+            /><span class="crossword-board__item--blank" id="item14-21"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[чЧ]{1}$"
+              required="required"
+              value=""
+              id="item14-22"
+            /><span class="crossword-board__item--blank" id="item14-23"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item14-24"
+            /><span class="crossword-board__item--blank" id="item14-25"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[шШ]{1}$"
+              required="required"
+              value=""
+              id="item14-26"
+            /><span class="crossword-board__item--blank" id="item15-1"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[cC]{1}$"
+              required="required"
+              value=""
+              id="item15-2"
+            /><span class="crossword-board__item--blank" id="item15-3"></span
+            ><span class="crossword-board__item--blank" id="item15-4"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[рР]{1}$"
+              required="required"
+              value=""
+              id="item15-5"
+            /><span class="crossword-board__item--blank" id="item15-6"></span
+            ><span class="crossword-board__item--blank" id="item15-7"></span
+            ><span class="crossword-board__item--blank" id="item15-8"></span
+            ><span class="crossword-board__item--blank" id="item15-9"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item15-10"
+            /><span class="crossword-board__item--blank" id="item15-11"></span
+            ><span class="crossword-board__item--blank" id="item15-12"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item15-13"
+            /><span class="crossword-board__item--blank" id="item15-14"></span
+            ><span class="crossword-board__item--blank" id="item15-15"></span
+            ><span class="crossword-board__item--blank" id="item15-16"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item15-17"
+            /><span class="crossword-board__item--blank" id="item15-18"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[иИ]{1}$"
+              required="required"
+              value=""
+              id="item15-19"
+            /><span class="crossword-board__item--blank" id="item15-20"></span
+            ><span class="crossword-board__item--blank" id="item15-21"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[кК]{1}$"
+              required="required"
+              value=""
+              id="item15-22"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[уУ]{1}$"
+              required="required"
+              value=""
+              id="item15-23"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[сС]{1}$"
+              required="required"
+              value=""
+              id="item15-24"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item15-25"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[кК]{1}$"
+              required="required"
+              value=""
+              id="item15-26"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item16-1"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[тТ]{1}$"
+              required="required"
+              value=""
+              id="item16-2"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[кК]{1}$"
+              required="required"
+              value=""
+              id="item16-3"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[рР]{1}$"
+              required="required"
+              value=""
+              id="item16-4"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[ыЫ]{1}$"
+              required="required"
+              value=""
+              id="item16-5"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[тТ]{1}$"
+              required="required"
+              value=""
+              id="item16-6"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[кК]{1}$"
+              required="required"
+              value=""
+              id="item16-7"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item16-8"
+            /><span class="crossword-board__item--blank" id="item16-9"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[рР]{1}$"
+              required="required"
+              value=""
+              id="item16-10"
+            /><span class="crossword-board__item--blank" id="item16-11"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[сС]{1}$"
+              required="required"
+              value=""
+              id="item16-12"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[нН]{1}$"
+              required="required"
+              value=""
+              id="item16-13"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item16-14"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[гГ]{1}$"
+              required="required"
+              value=""
+              id="item16-15"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item16-16"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[вВ]{1}$"
+              required="required"
+              value=""
+              id="item16-17"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[иИ]{1}$"
+              required="required"
+              value=""
+              id="item16-18"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[кК]{1}$"
+              required="required"
+              value=""
+              id="item16-19"
+            /><span class="crossword-board__item--blank" id="item16-20"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[дД]{1}$"
+              required="required"
+              value=""
+              id="item16-21"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item16-22"
+            /><span class="crossword-board__item--blank" id="item16-23"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[тТ]{1}$"
+              required="required"
+              value=""
+              id="item16-24"
+            /><span class="crossword-board__item--blank" id="item16-25"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[иИ]{1}$"
+              required="required"
+              value=""
+              id="item16-26"
+            /><span class="crossword-board__item--blank" id="item17-1"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[рР]{1}$"
+              required="required"
+              value=""
+              id="item17-2"
+            /><span class="crossword-board__item--blank" id="item17-3"></span
+            ><span class="crossword-board__item--blank" id="item17-4"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[лЛ]{1}$"
+              required="required"
+              value=""
+              id="item17-5"
+            /><span class="crossword-board__item--blank" id="item17-6"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[рР]{1}$"
+              required="required"
+              value=""
+              id="item17-7"
+            /><span class="crossword-board__item--blank" id="item17-8"></span
+            ><span class="crossword-board__item--blank" id="item17-9"></span
+            ><span class="crossword-board__item--blank" id="item17-10"></span
+            ><span class="crossword-board__item--blank" id="item17-11"></span
+            ><span class="crossword-board__item--blank" id="item17-12"></span
+            ><span class="crossword-board__item--blank" id="item17-13"></span
+            ><span class="crossword-board__item--blank" id="item17-14"></span
+            ><span class="crossword-board__item--blank" id="item17-15"></span
+            ><span class="crossword-board__item--blank" id="item17-16"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[иИ]{1}$"
+              required="required"
+              value=""
+              id="item17-17"
+            /><span class="crossword-board__item--blank" id="item17-18"></span
+            ><span class="crossword-board__item--blank" id="item17-19"></span
+            ><span class="crossword-board__item--blank" id="item17-20"></span
+            ><span class="crossword-board__item--blank" id="item17-21"></span
+            ><span class="crossword-board__item--blank" id="item17-22"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[пП]{1}$"
+              required="required"
+              value=""
+              id="item17-23"
+            /><span class="crossword-board__item--blank" id="item17-24"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item17-25"
+            /><span class="crossword-board__item--blank" id="item17-26"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[кК]{1}$"
+              required="required"
+              value=""
+              id="item18-1"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item18-2"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[рР]{1}$"
+              required="required"
+              value=""
+              id="item18-3"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[пП]{1}$"
+              required="required"
+              value=""
+              id="item18-4"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item18-5"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[рР]{1}$"
+              required="required"
+              value=""
+              id="item18-6"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item18-7"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[тТ]{1}$"
+              required="required"
+              value=""
+              id="item18-8"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[иИ]{1}$"
+              required="required"
+              value=""
+              id="item18-9"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[вВ]{1}$"
+              required="required"
+              value=""
+              id="item18-10"
+            /><span class="crossword-board__item--blank" id="item18-11"></span
+            ><span class="crossword-board__item--blank" id="item18-12"></span
+            ><span class="crossword-board__item--blank" id="item18-13"></span
+            ><span class="crossword-board__item--blank" id="item18-14"></span
+            ><span class="crossword-board__item--blank" id="item18-15"></span
+            ><span class="crossword-board__item--blank" id="item18-16"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[лЛ]{1}$"
+              required="required"
+              value=""
+              id="item18-17"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item18-18"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[сС]{1}$"
+              required="required"
+              value=""
+              id="item18-19"
+            /><span class="crossword-board__item--blank" id="item18-20"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[зЗ]{1}$"
+              required="required"
+              value=""
+              id="item18-21"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[вВ]{1}$"
+              required="required"
+              value=""
+              id="item18-22"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item18-23"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[зЗ]{1}$"
+              required="required"
+              value=""
+              id="item18-24"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[дД]{1}$"
+              required="required"
+              value=""
+              id="item18-25"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item18-26"
+            /><span class="crossword-board__item--blank" id="item19-1"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[мМ]{1}$"
+              required="required"
+              value=""
+              id="item19-2"
+            /><span class="crossword-board__item--blank" id="item19-3"></span
+            ><span class="crossword-board__item--blank" id="item19-4"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[вВ]{1}$"
+              required="required"
+              value=""
+              id="item19-5"
+            /><span class="crossword-board__item--blank" id="item19-6"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[сС]{1}$"
+              required="required"
+              value=""
+              id="item19-7"
+            /><span class="crossword-board__item--blank" id="item19-8"></span
+            ><span class="crossword-board__item--blank" id="item19-9"></span
+            ><span class="crossword-board__item--blank" id="item19-10"></span
+            ><span class="crossword-board__item--blank" id="item19-11"></span
+            ><span class="crossword-board__item--blank" id="item19-12"></span
+            ><span class="crossword-board__item--blank" id="item19-13"></span
+            ><span class="crossword-board__item--blank" id="item19-14"></span
+            ><span class="crossword-board__item--blank" id="item19-15"></span
+            ><span class="crossword-board__item--blank" id="item19-16"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item19-17"
+            /><span class="crossword-board__item--blank" id="item19-18"></span
+            ><span class="crossword-board__item--blank" id="item19-19"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[вВ]{1}$"
+              required="required"
+              value=""
+              id="item19-20"
+            /><span class="crossword-board__item--blank" id="item19-21"></span
+            ><span class="crossword-board__item--blank" id="item19-22"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[тТ]{1}$"
+              required="required"
+              value=""
+              id="item19-23"
+            /><span class="crossword-board__item--blank" id="item19-24"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item19-25"
+            /><span class="crossword-board__item--blank" id="item19-26"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[бБ]{1}$"
+              required="required"
+              value=""
+              id="item20-1"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item20-2"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[шШ]{1}$"
+              required="required"
+              value=""
+              id="item20-3"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[мМ]{1}$"
+              required="required"
+              value=""
+              id="item20-4"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item20-5"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[чЧ]{1}$"
+              required="required"
+              value=""
+              id="item20-6"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item20-7"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[кК]{1}$"
+              required="required"
+              value=""
+              id="item20-8"
+            /><span class="crossword-board__item--blank" id="item20-9"></span
+            ><span class="crossword-board__item--blank" id="item20-10"></span
+            ><span class="crossword-board__item--blank" id="item20-11"></span
+            ><span class="crossword-board__item--blank" id="item20-12"></span
+            ><span class="crossword-board__item--blank" id="item20-13"></span
+            ><span class="crossword-board__item--blank" id="item20-14"></span
+            ><span class="crossword-board__item--blank" id="item20-15"></span
+            ><span class="crossword-board__item--blank" id="item20-16"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[нН]{1}$"
+              required="required"
+              value=""
+              id="item20-17"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item20-18"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[вВ]{1}$"
+              required="required"
+              value=""
+              id="item20-19"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item20-20"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[сС]{1}$"
+              required="required"
+              value=""
+              id="item20-21"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[тТ]{1}$"
+              required="required"
+              value=""
+              id="item20-22"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item20-23"
+            /><span class="crossword-board__item--blank" id="item20-24"></span
+            ><span class="crossword-board__item--blank" id="item20-25"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[сС]{1}$"
+              required="required"
+              value=""
+              id="item20-26"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item21-1"
+            /><span class="crossword-board__item--blank" id="item21-2"></span
+            ><span class="crossword-board__item--blank" id="item21-3"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item21-4"
+            /><span class="crossword-board__item--blank" id="item21-5"></span
+            ><span class="crossword-board__item--blank" id="item21-6"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[тТ]{1}$"
+              required="required"
+              value=""
+              id="item21-7"
+            /><span class="crossword-board__item--blank" id="item21-8"></span
+            ><span class="crossword-board__item--blank" id="item21-9"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[гГ]{1}$"
+              required="required"
+              value=""
+              id="item21-10"
+            /><span class="crossword-board__item--blank" id="item21-11"></span
+            ><span class="crossword-board__item--blank" id="item21-12"></span
+            ><span class="crossword-board__item--blank" id="item21-13"></span
+            ><span class="crossword-board__item--blank" id="item21-14"></span
+            ><span class="crossword-board__item--blank" id="item21-15"></span
+            ><span class="crossword-board__item--blank" id="item21-16"></span
+            ><span class="crossword-board__item--blank" id="item21-17"></span
+            ><span class="crossword-board__item--blank" id="item21-18"></span
+            ><span class="crossword-board__item--blank" id="item21-19"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[чЧ]{1}$"
+              required="required"
+              value=""
+              id="item21-20"
+            /><span class="crossword-board__item--blank" id="item21-21"></span
+            ><span class="crossword-board__item--blank" id="item21-22"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[рР]{1}$"
+              required="required"
+              value=""
+              id="item21-23"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item21-24"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[пП]{1}$"
+              required="required"
+              value=""
+              id="item21-25"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item21-26"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[нН]{1}$"
+              required="required"
+              value=""
+              id="item22-1"
+            /><span class="crossword-board__item--blank" id="item22-2"></span
+            ><span class="crossword-board__item--blank" id="item22-3"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[мМ]{1}$"
+              required="required"
+              value=""
+              id="item22-4"
+            /><span class="crossword-board__item--blank" id="item22-5"></span
+            ><span class="crossword-board__item--blank" id="item22-6"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[кК]{1}$"
+              required="required"
+              value=""
+              id="item22-7"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item22-8"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[бБ]{1}$"
+              required="required"
+              value=""
+              id="item22-9"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item22-10"
+            /><span class="crossword-board__item--blank" id="item22-11"></span
+            ><span class="crossword-board__item--blank" id="item22-12"></span
+            ><span class="crossword-board__item--blank" id="item22-13"></span
+            ><span class="crossword-board__item--blank" id="item22-14"></span
+            ><span class="crossword-board__item--blank" id="item22-15"></span
+            ><span class="crossword-board__item--blank" id="item22-16"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item22-17"
+            /><span class="crossword-board__item--blank" id="item22-18"></span
+            ><span class="crossword-board__item--blank" id="item22-19"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item22-20"
+            /><span class="crossword-board__item--blank" id="item22-21"></span
+            ><span class="crossword-board__item--blank" id="item22-22"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[дД]{1}$"
+              required="required"
+              value=""
+              id="item22-23"
+            /><span class="crossword-board__item--blank" id="item22-24"></span
+            ><span class="crossword-board__item--blank" id="item22-25"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[жЖ]{1}$"
+              required="required"
+              value=""
+              id="item22-26"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[яЯ]{1}$"
+              required="required"
+              value=""
+              id="item23-1"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[рР]{1}$"
+              required="required"
+              value=""
+              id="item23-2"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[мМ]{1}$"
+              required="required"
+              value=""
+              id="item23-3"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item23-4"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[рР]{1}$"
+              required="required"
+              value=""
+              id="item23-5"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[кК]{1}$"
+              required="required"
+              value=""
+              id="item23-6"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item23-7"
+            /><span class="crossword-board__item--blank" id="item23-8"></span
+            ><span class="crossword-board__item--blank" id="item23-9"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[лЛ]{1}$"
+              required="required"
+              value=""
+              id="item23-10"
+            /><span class="crossword-board__item--blank" id="item23-11"></span
+            ><span class="crossword-board__item--blank" id="item23-12"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[жЖ]{1}$"
+              required="required"
+              value=""
+              id="item23-13"
+            /><span class="crossword-board__item--blank" id="item23-14"></span
+            ><span class="crossword-board__item--blank" id="item23-15"></span
+            ><span class="crossword-board__item--blank" id="item23-16"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[пП]{1}$"
+              required="required"
+              value=""
+              id="item23-17"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[ёЁ]{1}$"
+              required="required"
+              value=""
+              id="item23-18"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[тТ]{1}$"
+              required="required"
+              value=""
+              id="item23-19"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[рР]{1}$"
+              required="required"
+              value=""
+              id="item23-20"
+            /><span class="crossword-board__item--blank" id="item23-21"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[мМ]{1}$"
+              required="required"
+              value=""
+              id="item23-22"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item23-23"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[сС]{1}$"
+              required="required"
+              value=""
+              id="item23-24"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[кК]{1}$"
+              required="required"
+              value=""
+              id="item23-25"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item23-26"
+            /><span class="crossword-board__item--blank" id="item24-1"></span
+            ><span class="crossword-board__item--blank" id="item24-2"></span
+            ><span class="crossword-board__item--blank" id="item24-3"></span
+            ><span class="crossword-board__item--blank" id="item24-4"></span
+            ><span class="crossword-board__item--blank" id="item24-5"></span
+            ><span class="crossword-board__item--blank" id="item24-6"></span
+            ><span class="crossword-board__item--blank" id="item24-7"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[кК]{1}$"
+              required="required"
+              value=""
+              id="item24-8"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item24-9"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[лЛ]{1}$"
+              required="required"
+              value=""
+              id="item24-10"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item24-11"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[дД]{1}$"
+              required="required"
+              value=""
+              id="item24-12"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item24-13"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[цЦ]{1}$"
+              required="required"
+              value=""
+              id="item24-14"
+            /><span class="crossword-board__item--blank" id="item24-15"></span
+            ><span class="crossword-board__item--blank" id="item24-16"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item24-17"
+            /><span class="crossword-board__item--blank" id="item24-18"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item24-19"
+            /><span class="crossword-board__item--blank" id="item24-20"></span
+            ><span class="crossword-board__item--blank" id="item24-21"></span
+            ><span class="crossword-board__item--blank" id="item24-22"></span
+            ><span class="crossword-board__item--blank" id="item24-23"></span
+            ><span class="crossword-board__item--blank" id="item24-24"></span
+            ><span class="crossword-board__item--blank" id="item24-25"></span
+            ><span class="crossword-board__item--blank" id="item24-26"></span
+            ><span class="crossword-board__item--blank" id="item25-1"></span
+            ><span class="crossword-board__item--blank" id="item25-2"></span
+            ><span class="crossword-board__item--blank" id="item25-3"></span
+            ><span class="crossword-board__item--blank" id="item25-4"></span
+            ><span class="crossword-board__item--blank" id="item25-5"></span
+            ><span class="crossword-board__item--blank" id="item25-6"></span
+            ><span class="crossword-board__item--blank" id="item25-7"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item25-8"
+            /><span class="crossword-board__item--blank" id="item25-9"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item25-10"
+            /><span class="crossword-board__item--blank" id="item25-11"></span
+            ><span class="crossword-board__item--blank" id="item25-12"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[лЛ]{1}$"
+              required="required"
+              value=""
+              id="item25-13"
+            /><span class="crossword-board__item--blank" id="item25-14"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[вВ]{1}$"
+              required="required"
+              value=""
+              id="item25-15"
+            /><span class="crossword-board__item--blank" id="item25-16"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[лЛ]{1}$"
+              required="required"
+              value=""
+              id="item25-17"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item25-18"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[тТ]{1}$"
+              required="required"
+              value=""
+              id="item25-19"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[оО]{1}$"
+              required="required"
+              value=""
+              id="item25-20"
+            /><span class="crossword-board__item--blank" id="item25-21"></span
+            ><span class="crossword-board__item--blank" id="item25-22"></span
+            ><span class="crossword-board__item--blank" id="item25-23"></span
+            ><span class="crossword-board__item--blank" id="item25-24"></span
+            ><span class="crossword-board__item--blank" id="item25-25"></span
+            ><span class="crossword-board__item--blank" id="item25-26"></span
+            ><span class="crossword-board__item--blank" id="item26-1"></span
+            ><span class="crossword-board__item--blank" id="item26-2"></span
+            ><span class="crossword-board__item--blank" id="item26-3"></span
+            ><span class="crossword-board__item--blank" id="item26-4"></span
+            ><span class="crossword-board__item--blank" id="item26-5"></span
+            ><span class="crossword-board__item--blank" id="item26-6"></span
+            ><span class="crossword-board__item--blank" id="item26-7"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[сС]{1}$"
+              required="required"
+              value=""
+              id="item26-8"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item26-9"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[нН]{1}$"
+              required="required"
+              value=""
+              id="item26-10"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[иИ]{1}$"
+              required="required"
+              value=""
+              id="item26-11"
+            /><span class="crossword-board__item--blank" id="item26-12"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item26-13"
+            /><span class="crossword-board__item--blank" id="item26-14"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item26-15"
+            /><span class="crossword-board__item--blank" id="item26-16"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[ьЬ]{1}$"
+              required="required"
+              value=""
+              id="item26-17"
+            /><span class="crossword-board__item--blank" id="item26-18"></span
+            ><span class="crossword-board__item--blank" id="item26-19"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[сС]{1}$"
+              required="required"
+              value=""
+              id="item26-20"
+            /><span class="crossword-board__item--blank" id="item26-21"></span
+            ><span class="crossword-board__item--blank" id="item26-22"></span
+            ><span class="crossword-board__item--blank" id="item26-23"></span
+            ><span class="crossword-board__item--blank" id="item26-24"></span
+            ><span class="crossword-board__item--blank" id="item26-25"></span
+            ><span class="crossword-board__item--blank" id="item26-26"></span
+            ><span class="crossword-board__item--blank" id="item27-1"></span
+            ><span class="crossword-board__item--blank" id="item27-2"></span
+            ><span class="crossword-board__item--blank" id="item27-3"></span
+            ><span class="crossword-board__item--blank" id="item27-4"></span
+            ><span class="crossword-board__item--blank" id="item27-5"></span
+            ><span class="crossword-board__item--blank" id="item27-6"></span
+            ><span class="crossword-board__item--blank" id="item27-7"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[тТ]{1}$"
+              required="required"
+              value=""
+              id="item27-8"
+            /><span class="crossword-board__item--blank" id="item27-9"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[дД]{1}$"
+              required="required"
+              value=""
+              id="item27-10"
+            /><span class="crossword-board__item--blank" id="item27-11"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item27-12"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[нН]{1}$"
+              required="required"
+              value=""
+              id="item27-13"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item27-14"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[нН]{1}$"
+              required="required"
+              value=""
+              id="item27-15"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[аА]{1}$"
+              required="required"
+              value=""
+              id="item27-16"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[сС]{1}$"
+              required="required"
+              value=""
+              id="item27-17"
+            /><span class="crossword-board__item--blank" id="item27-18"></span
+            ><span class="crossword-board__item--blank" id="item27-19"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[лЛ]{1}$"
+              required="required"
+              value=""
+              id="item27-20"
+            /><span class="crossword-board__item--blank" id="item27-21"></span
+            ><span class="crossword-board__item--blank" id="item27-22"></span
+            ><span class="crossword-board__item--blank" id="item27-23"></span
+            ><span class="crossword-board__item--blank" id="item27-24"></span
+            ><span class="crossword-board__item--blank" id="item27-25"></span
+            ><span class="crossword-board__item--blank" id="item27-26"></span
+            ><span class="crossword-board__item--blank" id="item28-1"></span
+            ><span class="crossword-board__item--blank" id="item28-2"></span
+            ><span class="crossword-board__item--blank" id="item28-3"></span
+            ><span class="crossword-board__item--blank" id="item28-4"></span
+            ><span class="crossword-board__item--blank" id="item28-5"></span
+            ><span class="crossword-board__item--blank" id="item28-6"></span
+            ><span class="crossword-board__item--blank" id="item28-7"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[юЮ]{1}$"
+              required="required"
+              value=""
+              id="item28-8"
+            /><span class="crossword-board__item--blank" id="item28-9"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[иИ]{1}$"
+              required="required"
+              value=""
+              id="item28-10"
+            /><span class="crossword-board__item--blank" id="item28-11"></span
+            ><span class="crossword-board__item--blank" id="item28-12"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[иИ]{1}$"
+              required="required"
+              value=""
+              id="item28-13"
+            /><span class="crossword-board__item--blank" id="item28-14"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[иИ]{1}$"
+              required="required"
+              value=""
+              id="item28-15"
+            /><span class="crossword-board__item--blank" id="item28-16"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[иИ]{1}$"
+              required="required"
+              value=""
+              id="item28-17"
+            /><span class="crossword-board__item--blank" id="item28-18"></span
+            ><span class="crossword-board__item--blank" id="item28-19"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[иИ]{1}$"
+              required="required"
+              value=""
+              id="item28-20"
+            /><span class="crossword-board__item--blank" id="item28-21"></span
+            ><span class="crossword-board__item--blank" id="item28-22"></span
+            ><span class="crossword-board__item--blank" id="item28-23"></span
+            ><span class="crossword-board__item--blank" id="item28-24"></span
+            ><span class="crossword-board__item--blank" id="item28-25"></span
+            ><span class="crossword-board__item--blank" id="item28-26"></span
+            ><span class="crossword-board__item--blank" id="item29-1"></span
+            ><span class="crossword-board__item--blank" id="item29-2"></span
+            ><span class="crossword-board__item--blank" id="item29-3"></span
+            ><span class="crossword-board__item--blank" id="item29-4"></span
+            ><span class="crossword-board__item--blank" id="item29-5"></span
+            ><span class="crossword-board__item--blank" id="item29-6"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[зЗ]{1}$"
+              required="required"
+              value=""
+              id="item29-7"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[мМ]{1}$"
+              required="required"
+              value=""
+              id="item29-8"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item29-9"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[яЯ]{1}$"
+              required="required"
+              value=""
+              id="item29-10"
+            /><span class="crossword-board__item--blank" id="item29-11"></span
+            ><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[щЩ]{1}$"
+              required="required"
+              value=""
+              id="item29-12"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[еЕ]{1}$"
+              required="required"
+              value=""
+              id="item29-13"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[лЛ]{1}$"
+              required="required"
+              value=""
+              id="item29-14"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[кК]{1}$"
+              required="required"
+              value=""
+              id="item29-15"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[уУ]{1}$"
+              required="required"
+              value=""
+              id="item29-16"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[нН]{1}$"
+              required="required"
+              value=""
+              id="item29-17"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[чЧ]{1}$"
+              required="required"
+              value=""
+              id="item29-18"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[иИ]{1}$"
+              required="required"
+              value=""
+              id="item29-19"
+            /><input
+              class="crossword-board__item"
+              type="text"
+              minlength="1"
+              maxlength="1"
+              pattern="^[кК]{1}$"
+              required="required"
+              value=""
+              id="item29-20"
+            /><span class="crossword-board__item--blank" id="item29-21"></span
+            ><span class="crossword-board__item--blank" id="item29-22"></span
+            ><span class="crossword-board__item--blank" id="item29-23"></span
+            ><span class="crossword-board__item--blank" id="item29-24"></span
+            ><span class="crossword-board__item--blank" id="item29-25"></span
+            ><span class="crossword-board__item--blank" id="item29-26"></span>
+            <div class="crossword-board crossword-board--labels">
+              <span
+                id="label-1"
+                class="crossword-board__item-label crossword-board__item-label--1"
+                ><span class="crossword-board__item-label-text">1</span></span
+              ><span
+                id="label-2"
+                class="crossword-board__item-label crossword-board__item-label--2"
+                ><span class="crossword-board__item-label-text">2</span></span
+              ><span
+                id="label-3"
+                class="crossword-board__item-label crossword-board__item-label--3"
+                ><span class="crossword-board__item-label-text">3</span></span
+              ><span
+                id="label-4"
+                class="crossword-board__item-label crossword-board__item-label--4"
+                ><span class="crossword-board__item-label-text">4</span></span
+              ><span
+                id="label-5"
+                class="crossword-board__item-label crossword-board__item-label--5"
+                ><span class="crossword-board__item-label-text">5</span></span
+              ><span
+                id="label-6"
+                class="crossword-board__item-label crossword-board__item-label--6"
+                ><span class="crossword-board__item-label-text">6</span></span
+              ><span
+                id="label-7"
+                class="crossword-board__item-label crossword-board__item-label--7"
+                ><span class="crossword-board__item-label-text">7</span></span
+              ><span
+                id="label-8"
+                class="crossword-board__item-label crossword-board__item-label--8"
+                ><span class="crossword-board__item-label-text">8</span></span
+              ><span
+                id="label-9"
+                class="crossword-board__item-label crossword-board__item-label--9"
+                ><span class="crossword-board__item-label-text">9</span></span
+              ><span
+                id="label-10"
+                class="crossword-board__item-label crossword-board__item-label--10"
+                ><span class="crossword-board__item-label-text">10</span></span
+              ><span
+                id="label-11"
+                class="crossword-board__item-label crossword-board__item-label--11"
+                ><span class="crossword-board__item-label-text">11</span></span
+              ><span
+                id="label-12"
+                class="crossword-board__item-label crossword-board__item-label--12"
+                ><span class="crossword-board__item-label-text">12</span></span
+              ><span
+                id="label-13"
+                class="crossword-board__item-label crossword-board__item-label--13"
+                ><span class="crossword-board__item-label-text">13</span></span
+              ><span
+                id="label-14"
+                class="crossword-board__item-label crossword-board__item-label--14"
+                ><span class="crossword-board__item-label-text">14</span></span
+              ><span
+                id="label-15"
+                class="crossword-board__item-label crossword-board__item-label--15"
+                ><span class="crossword-board__item-label-text">15</span></span
+              ><span
+                id="label-16"
+                class="crossword-board__item-label crossword-board__item-label--16"
+                ><span class="crossword-board__item-label-text">16</span></span
+              ><span
+                id="label-17"
+                class="crossword-board__item-label crossword-board__item-label--17"
+                ><span class="crossword-board__item-label-text">17</span></span
+              ><span
+                id="label-18"
+                class="crossword-board__item-label crossword-board__item-label--18"
+                ><span class="crossword-board__item-label-text">18</span></span
+              ><span
+                id="label-19"
+                class="crossword-board__item-label crossword-board__item-label--19"
+                ><span class="crossword-board__item-label-text">19</span></span
+              ><span
+                id="label-20"
+                class="crossword-board__item-label crossword-board__item-label--20"
+                ><span class="crossword-board__item-label-text">20</span></span
+              ><span
+                id="label-21"
+                class="crossword-board__item-label crossword-board__item-label--21"
+                ><span class="crossword-board__item-label-text">21</span></span
+              ><span
+                id="label-22"
+                class="crossword-board__item-label crossword-board__item-label--22"
+                ><span class="crossword-board__item-label-text">22</span></span
+              ><span
+                id="label-23"
+                class="crossword-board__item-label crossword-board__item-label--23"
+                ><span class="crossword-board__item-label-text">23</span></span
+              ><span
+                id="label-24"
+                class="crossword-board__item-label crossword-board__item-label--24"
+                ><span class="crossword-board__item-label-text">24</span></span
+              ><span
+                id="label-25"
+                class="crossword-board__item-label crossword-board__item-label--25"
+                ><span class="crossword-board__item-label-text">25</span></span
+              ><span
+                id="label-26"
+                class="crossword-board__item-label crossword-board__item-label--26"
+                ><span class="crossword-board__item-label-text">26</span></span
+              ><span
+                id="label-27"
+                class="crossword-board__item-label crossword-board__item-label--27"
+                ><span class="crossword-board__item-label-text">27</span></span
+              ><span
+                id="label-28"
+                class="crossword-board__item-label crossword-board__item-label--28"
+                ><span class="crossword-board__item-label-text">28</span></span
+              ><span
+                id="label-29"
+                class="crossword-board__item-label crossword-board__item-label--29"
+                ><span class="crossword-board__item-label-text">29</span></span
+              ><span
+                id="label-30"
+                class="crossword-board__item-label crossword-board__item-label--30"
+                ><span class="crossword-board__item-label-text">30</span></span
+              ><span
+                id="label-31"
+                class="crossword-board__item-label crossword-board__item-label--31"
+                ><span class="crossword-board__item-label-text">31</span></span
+              ><span
+                id="label-32"
+                class="crossword-board__item-label crossword-board__item-label--32"
+                ><span class="crossword-board__item-label-text">32</span></span
+              ><span
+                id="label-33"
+                class="crossword-board__item-label crossword-board__item-label--33"
+                ><span class="crossword-board__item-label-text">33</span></span
+              ><span
+                id="label-34"
+                class="crossword-board__item-label crossword-board__item-label--34"
+                ><span class="crossword-board__item-label-text">34</span></span
+              ><span
+                id="label-35"
+                class="crossword-board__item-label crossword-board__item-label--35"
+                ><span class="crossword-board__item-label-text">35</span></span
+              ><span
+                id="label-36"
+                class="crossword-board__item-label crossword-board__item-label--36"
+                ><span class="crossword-board__item-label-text">36</span></span
+              ><span
+                id="label-37"
+                class="crossword-board__item-label crossword-board__item-label--37"
+                ><span class="crossword-board__item-label-text">37</span></span
+              ><span
+                id="label-38"
+                class="crossword-board__item-label crossword-board__item-label--38"
+                ><span class="crossword-board__item-label-text">38</span></span
+              ><span
+                id="label-39"
+                class="crossword-board__item-label crossword-board__item-label--39"
+                ><span class="crossword-board__item-label-text">39</span></span
+              ><span
+                id="label-40"
+                class="crossword-board__item-label crossword-board__item-label--40"
+                ><span class="crossword-board__item-label-text">40</span></span
+              ><span
+                id="label-41"
+                class="crossword-board__item-label crossword-board__item-label--41"
+                ><span class="crossword-board__item-label-text">41</span></span
+              ><span
+                id="label-42"
+                class="crossword-board__item-label crossword-board__item-label--42"
+                ><span class="crossword-board__item-label-text">42</span></span
+              ><span
+                id="label-43"
+                class="crossword-board__item-label crossword-board__item-label--43"
+                ><span class="crossword-board__item-label-text">43</span></span
+              ><span
+                id="label-44"
+                class="crossword-board__item-label crossword-board__item-label--44"
+                ><span class="crossword-board__item-label-text">44</span></span
+              ><span
+                id="label-45"
+                class="crossword-board__item-label crossword-board__item-label--45"
+                ><span class="crossword-board__item-label-text">45</span></span
+              ><span
+                id="label-46"
+                class="crossword-board__item-label crossword-board__item-label--46"
+                ><span class="crossword-board__item-label-text">46</span></span
+              ><span
+                id="label-47"
+                class="crossword-board__item-label crossword-board__item-label--47"
+                ><span class="crossword-board__item-label-text">47</span></span
+              ><span
+                id="label-48"
+                class="crossword-board__item-label crossword-board__item-label--48"
+                ><span class="crossword-board__item-label-text">48</span></span
+              ><span
+                id="label-49"
+                class="crossword-board__item-label crossword-board__item-label--49"
+                ><span class="crossword-board__item-label-text">49</span></span
+              ><span
+                id="label-50"
+                class="crossword-board__item-label crossword-board__item-label--50"
+                ><span class="crossword-board__item-label-text">50</span></span
+              ><span
+                id="label-51"
+                class="crossword-board__item-label crossword-board__item-label--51"
+                ><span class="crossword-board__item-label-text">51</span></span
+              ><span
+                id="label-52"
+                class="crossword-board__item-label crossword-board__item-label--52"
+                ><span class="crossword-board__item-label-text">52</span></span
+              ><span
+                id="label-53"
+                class="crossword-board__item-label crossword-board__item-label--53"
+                ><span class="crossword-board__item-label-text">53</span></span
+              ><span
+                id="label-54"
+                class="crossword-board__item-label crossword-board__item-label--54"
+                ><span class="crossword-board__item-label-text">54</span></span
+              ><span
+                id="label-55"
+                class="crossword-board__item-label crossword-board__item-label--55"
+                ><span class="crossword-board__item-label-text">55</span></span
+              ><span
+                id="label-56"
+                class="crossword-board__item-label crossword-board__item-label--56"
+                ><span class="crossword-board__item-label-text">56</span></span
+              ><span
+                id="label-57"
+                class="crossword-board__item-label crossword-board__item-label--57"
+                ><span class="crossword-board__item-label-text">57</span></span
+              ><span
+                id="label-58"
+                class="crossword-board__item-label crossword-board__item-label--58"
+                ><span class="crossword-board__item-label-text">58</span></span
+              ><span
+                id="label-59"
+                class="crossword-board__item-label crossword-board__item-label--59"
+                ><span class="crossword-board__item-label-text">59</span></span
+              ><span
+                id="label-60"
+                class="crossword-board__item-label crossword-board__item-label--60"
+                ><span class="crossword-board__item-label-text">60</span></span
+              ><span
+                id="label-61"
+                class="crossword-board__item-label crossword-board__item-label--61"
+                ><span class="crossword-board__item-label-text">61</span></span
+              ><span
+                id="label-62"
+                class="crossword-board__item-label crossword-board__item-label--62"
+                ><span class="crossword-board__item-label-text">62</span></span
+              ><span
+                id="label-63"
+                class="crossword-board__item-label crossword-board__item-label--63"
+                ><span class="crossword-board__item-label-text">63</span></span
+              ><span
+                id="label-64"
+                class="crossword-board__item-label crossword-board__item-label--64"
+                ><span class="crossword-board__item-label-text">64</span></span
+              ><span
+                id="label-65"
+                class="crossword-board__item-label crossword-board__item-label--65"
+                ><span class="crossword-board__item-label-text">65</span></span
+              ><span
+                id="label-66"
+                class="crossword-board__item-label crossword-board__item-label--66"
+                ><span class="crossword-board__item-label-text">66</span></span
+              >
+            </div>
+
+            <div
+              class="crossword-board crossword-board--labels crossword-board--labels-fin"
+            >
+              <span
+                class="crossword-board__item-label-fin crossword-board__item-label_fin-1"
+              >
+                <span class="crossword-board__item-label-text">1</span>
+              </span>
+              <span
+                class="crossword-board__item-label-fin crossword-board__item-label_fin-2"
+              >
+                <span class="crossword-board__item-label-text">2</span>
+              </span>
+              <span
+                class="crossword-board__item-label-fin crossword-board__item-label_fin-3"
+              >
+                <span class="crossword-board__item-label-text">3</span>
+              </span>
+              <span
+                class="crossword-board__item-label-fin crossword-board__item-label_fin-4"
+              >
+                <span class="crossword-board__item-label-text">4</span>
+              </span>
+              <span
+                class="crossword-board__item-label-fin crossword-board__item-label_fin-5"
+              >
+                <span class="crossword-board__item-label-text">5</span>
+              </span>
+              <span
+                class="crossword-board__item-label-fin crossword-board__item-label_fin-6"
+              >
+                <span class="crossword-board__item-label-text">6</span>
+              </span>
+              <span
+                class="crossword-board__item-label-fin crossword-board__item-label_fin-7"
+              >
+                <span class="crossword-board__item-label-text">7</span>
+              </span>
+              <span
+                class="crossword-board__item-label-fin crossword-board__item-label_fin-8"
+              >
+                <span class="crossword-board__item-label-text">8</span>
+              </span>
+              <span
+                class="crossword-board__item-label-fin crossword-board__item-label_fin-9"
+              >
+                <span class="crossword-board__item-label-text">9</span>
+              </span>
+              <span
+                class="crossword-board__item-label-fin crossword-board__item-label_fin-10"
+              >
+                <span class="crossword-board__item-label-text">10</span>
+              </span>
+              <span
+                class="crossword-board__item-label-fin crossword-board__item-label_fin-11"
+              >
+                <span class="crossword-board__item-label-text">11</span>
+              </span>
+              <span
+                class="crossword-board__item-label-fin crossword-board__item-label_fin-12"
+              >
+                <span class="crossword-board__item-label-text">12</span>
+              </span>
+            </div>
+            <div class="crossword-clues" data-scrolled-area>
+              <dl class="crossword-clues__list crossword-clues__list--across">
+                <dt class="crossword-clues__list-title">По горизонтали:</dt>
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--across-1"
+                  data-number="1"
+                >
+                  1. Русский живописец-жанрист, автор картины «Осеннее утро»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--across-6"
+                  data-number="6"
+                >
+                  6. Рок-группа с песней «Осенний крик ястреба»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--across-7"
+                  data-number="7"
+                >
+                  7. Актриса в роли Наташи в мелодраме Бориса Яшина «Осенние
+                  свадьбы»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--across-9"
+                  data-number="9"
+                >
+                  9. Борис ... «Осень над городом»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--across-11"
+                  data-number="11"
+                >
+                  11. «В усадьбе осенью». (Сергей ... — известный российский
+                  живописец)
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--across-14"
+                  data-number="14"
+                >
+                  14. Актриса в роли Дуси в фильме «Осень»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--across-17"
+                  data-number="17"
+                >
+                  17. Нечто служебное, что соединило Мымру с Новосельцевым
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--across-19"
+                  data-number="19"
+                >
+                  19. «По мокрым скверам проходит осень, ... нахмуря!» (Николай
+                  Рубцов)
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--across-21"
+                  data-number="21"
+                >
+                  21. «В городе осень, и дождь, и ...» (песен.)
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--across-22"
+                  data-number="22"
+                >
+                  22. «Мадам, ... падают листья, и осень давно уж в цвету...»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--across-23"
+                  data-number="23"
+                >
+                  23. «Осеннее» пушкинское имение
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--across-25"
+                  data-number="25"
+                >
+                  25. Актёр из вестерна «Сентябрьский рассвет», отец Анджелины
+                  Джоли
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--across-26"
+                  data-number="26"
+                >
+                  26. «Осенняя рапсодия» — ... Антона Давидянца
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--across-28"
+                  data-number="28"
+                >
+                  28. Николай ... «Осень». Этюд
+                </dd>
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--across-30"
+                  data-number="30"
+                >
+                  30. Иван ... «Ранняя осень»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--across-31"
+                  data-number="31"
+                >
+                  31. Исаак ... «Золотая осень»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--across-32"
+                  data-number="32"
+                >
+                  32. «Летит, летит по небу … усталый»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--across-39"
+                  data-number="39"
+                >
+                  39. Насекомое, оказавшееся к осени в положении бомжа
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--across-40"
+                  data-number="40"
+                >
+                  40. Картина «... винограда, или Осень» (Франсиско Гойя)
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--across-41"
+                  data-number="41"
+                >
+                  41. Драма Ингмара Бергмана «Осенняя ...»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--across-42"
+                  data-number="42"
+                >
+                  42. Фильм Отара Иоселиани
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--across-43"
+                  data-number="43"
+                >
+                  43. «Сладкий ...» — американская мелодрама с участием Киану
+                  Ривза и Шарлиз Терон
+                </dd>
+              </dl>
+              <dl class="crossword-clues__list crossword-clues__list--down">
+                <dt class="crossword-clues__list-title">По вертикали:</dt>
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--down-1"
+                  data-number="1"
+                >
+                  1. «Никого не пощадила эта осень, даже солнце не в ту сторону
+                  упало» (певец)
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--down-2"
+                  data-number="2"
+                >
+                  2. Жанр произведения Прилежаевой «Осень»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--down-3"
+                  data-number="3"
+                >
+                  3. Фильм «Когда наступает сентябрь» Эдмонда Кеосаяна по жанру
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--down-4"
+                  data-number="4"
+                >
+                  4. Польский писатель и художник, автор романа «Прощание с
+                  осенью»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--down-5"
+                  data-number="5"
+                >
+                  5. «Осенью в дождливый серый день проскакал по городу ...»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--down-8"
+                  data-number="8"
+                >
+                  8. «И осень тихою вдовой вступает в пёстрый … свой»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--down-10"
+                  data-number="10"
+                >
+                  10. «Старинный вальс «Осенний сон» играет ...»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--down-12"
+                  data-number="12"
+                >
+                  12. Ефим ... «Октябрь»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--down-13"
+                  data-number="13"
+                >
+                  13. Режиссёр американского фильма «Октябрьское небо»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--down-14"
+                  data-number="14"
+                >
+                  14. Роман Габриэля ... Маркеса «Осень патриарха»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--down-15"
+                  data-number="15"
+                >
+                  15. «Скоро осень. За окнами ... От дождя потемнели кусты»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--down-16"
+                  data-number="16"
+                >
+                  16. Александр Володин по отношению к грустной философской
+                  комедии «Осенний марафон»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--down-18"
+                  data-number="18"
+                >
+                  18. Во саду ли, в нём ли девица гуляла
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--down-20"
+                  data-number="20"
+                >
+                  20. Немец Пауль в фильме Грамматикова «Осенние соблазны»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--down-24"
+                  data-number="24"
+                >
+                  24. Какая река изображена на картине Поленова «Золотая осень»?
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--down-27"
+                  data-number="27"
+                >
+                  27. Цветовой строй картины
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--down-29"
+                  data-number="29"
+                >
+                  29. Ричард из мелодрамы «Осень в Нью-Йорке»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--down-33"
+                  data-number="33"
+                >
+                  33. У неё «нет плохой погоды»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--down-34"
+                  data-number="34"
+                >
+                  34. Река из песни Шевчука «Осень»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--down-34"
+                  data-number="34"
+                >
+                  35. «... забросал меня осеннею листвой...»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--down-36"
+                  data-number="36"
+                >
+                  36. «Сегодня осень в дверь мне позвонила» (... Рубальская)
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--down-37"
+                  data-number="37"
+                >
+                  37. Из подаренного ветром крепдешина танцевала в подворотне
+                  осень вальс-...»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--down-38"
+                  data-number="38"
+                >
+                  38. «Осень, осень, в … просим!» (Иван Суриков) вальс-...»
+                </dd>
+
+                <dd
+                  class="crossword-clues__list-item crossword-clues__list-item--down-39"
+                  data-number="39"
+                >
+                  39. Видение, в котором осень танцует вальс-бостон
+                </dd>
+              </dl>
+            </div>
+            <div class="crossword-word">
+              <div class="crossword-letter crossword-letter--1">
+                <div class="crossword-letter__text">п</div>
+                <div class="crossword-letter__lbl">1</div>
+              </div>
+              <div class="crossword-letter crossword-letter--2">
+                <div class="crossword-letter__text">о</div>
+                <div class="crossword-letter__lbl">2</div>
+              </div>
+              <div class="crossword-letter crossword-letter--3">
+                <div class="crossword-letter__text">з</div>
+                <div class="crossword-letter__lbl">3</div>
+              </div>
+              <div class="crossword-letter crossword-letter--4">
+                <div class="crossword-letter__text">д</div>
+                <div class="crossword-letter__lbl">4</div>
+              </div>
+              <div class="crossword-letter crossword-letter--5">
+                <div class="crossword-letter__text">р</div>
+                <div class="crossword-letter__lbl">5</div>
+              </div>
+              <div class="crossword-letter crossword-letter--6">
+                <div class="crossword-letter__text">а</div>
+                <div class="crossword-letter__lbl">6</div>
+              </div>
+              <div class="crossword-letter crossword-letter--7">
+                <div class="crossword-letter__text">в</div>
+                <div class="crossword-letter__lbl">7</div>
+              </div>
+              <div class="crossword-letter crossword-letter--8">
+                <div class="crossword-letter__text">л</div>
+                <div class="crossword-letter__lbl">8</div>
+              </div>
+              <div class="crossword-letter crossword-letter--9">
+                <div class="crossword-letter__text">е</div>
+                <div class="crossword-letter__lbl">9</div>
+              </div>
+              <div class="crossword-letter crossword-letter--10">
+                <div class="crossword-letter__text">н</div>
+                <div class="crossword-letter__lbl">10</div>
+              </div>
+              <div class="crossword-letter crossword-letter--11">
+                <div class="crossword-letter__text">и</div>
+                <div class="crossword-letter__lbl">11</div>
+              </div>
+              <div class="crossword-letter crossword-letter--12">
+                <div class="crossword-letter__text">е</div>
+                <div class="crossword-letter__lbl">12</div>
+              </div>
+            </div>
+            <!--<div class="crossword-complete">
+              Поздравляем! Вы верно отгадали все слова.
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="crossword-clues crossword-clues__static">
+        <dl class="crossword-clues__list crossword-clues__list--across">
+          <dt class="crossword-clues__list-title">По горизонтали:</dt>
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--across-1"
+            data-number="1"
+          >
+            1. Русский живописец-жанрист, автор картины «Осеннее утро»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--across-6"
+            data-number="6"
+          >
+            6. Рок-группа с песней «Осенний крик ястреба»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--across-7"
+            data-number="7"
+          >
+            7. Актриса в роли Наташи в мелодраме Бориса Яшина «Осенние свадьбы»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--across-9"
+            data-number="9"
+          >
+            9. Борис ... «Осень над городом»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--across-11"
+            data-number="11"
+          >
+            11. «В усадьбе осенью». (Сергей ... — известный российский
+            живописец)
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--across-14"
+            data-number="14"
+          >
+            14. Актриса в роли Дуси в фильме «Осень»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--across-17"
+            data-number="17"
+          >
+            17. Нечто служебное, что соединило Мымру с Новосельцевым
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--across-19"
+            data-number="19"
+          >
+            19. «По мокрым скверам проходит осень, ... нахмуря!» (Николай
+            Рубцов)
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--across-21"
+            data-number="21"
+          >
+            21. «В городе осень, и дождь, и ...» (песен.)
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--across-22"
+            data-number="22"
+          >
+            22. «Мадам, ... падают листья, и осень давно уж в цвету...»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--across-23"
+            data-number="23"
+          >
+            23. «Осеннее» пушкинское имение
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--across-25"
+            data-number="25"
+          >
+            25. Актёр из вестерна «Сентябрьский рассвет», отец Анджелины Джоли
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--across-26"
+            data-number="26"
+          >
+            26. «Осенняя рапсодия» — ... Антона Давидянца
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--across-28"
+            data-number="28"
+          >
+            28. Николай ... «Осень». Этюд
+          </dd>
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--across-30"
+            data-number="30"
+          >
+            30. Иван ... «Ранняя осень»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--across-31"
+            data-number="31"
+          >
+            31. Исаак ... «Золотая осень»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--across-32"
+            data-number="32"
+          >
+            32. «Летит, летит по небу … усталый»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--across-39"
+            data-number="39"
+          >
+            39. Насекомое, оказавшееся к осени в положении бомжа
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--across-40"
+            data-number="40"
+          >
+            40. Картина «... винограда, или Осень» (Франсиско Гойя)
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--across-41"
+            data-number="41"
+          >
+            41. Драма Ингмара Бергмана «Осенняя ...»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--across-42"
+            data-number="42"
+          >
+            42. Фильм Отара Иоселиани
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--across-43"
+            data-number="43"
+          >
+            43. «Сладкий ...» — американская мелодрама с участием Киану Ривза и
+            Шарлиз Терон
+          </dd>
+        </dl>
+        <dl class="crossword-clues__list crossword-clues__list--down">
+          <dt class="crossword-clues__list-title">По вертикали:</dt>
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--down-1"
+            data-number="1"
+          >
+            1. «Никого не пощадила эта осень, даже солнце не в ту сторону упало»
+            (певец)
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--down-2"
+            data-number="2"
+          >
+            2. Жанр произведения Прилежаевой «Осень»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--down-3"
+            data-number="3"
+          >
+            3. Фильм «Когда наступает сентябрь» Эдмонда Кеосаяна по жанру
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--down-4"
+            data-number="4"
+          >
+            4. Польский писатель и художник, автор романа «Прощание с осенью»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--down-5"
+            data-number="5"
+          >
+            5. «Осенью в дождливый серый день проскакал по городу ...»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--down-8"
+            data-number="8"
+          >
+            8. «И осень тихою вдовой вступает в пёстрый … свой»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--down-10"
+            data-number="10"
+          >
+            10. «Старинный вальс «Осенний сон» играет ...»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--down-12"
+            data-number="12"
+          >
+            12. Ефим ... «Октябрь»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--down-13"
+            data-number="13"
+          >
+            13. Режиссёр американского фильма «Октябрьское небо»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--down-14"
+            data-number="14"
+          >
+            14. Роман Габриэля ... Маркеса «Осень патриарха»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--down-15"
+            data-number="15"
+          >
+            15. «Скоро осень. За окнами ... От дождя потемнели кусты»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--down-16"
+            data-number="16"
+          >
+            16. Александр Володин по отношению к грустной философской комедии
+            «Осенний марафон»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--down-18"
+            data-number="18"
+          >
+            18. Во саду ли, в нём ли девица гуляла
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--down-20"
+            data-number="20"
+          >
+            20. Немец Пауль в фильме Грамматикова «Осенние соблазны»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--down-24"
+            data-number="24"
+          >
+            24. Какая река изображена на картине Поленова «Золотая осень»?
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--down-27"
+            data-number="27"
+          >
+            27. Цветовой строй картины
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--down-29"
+            data-number="29"
+          >
+            29. Ричард из мелодрамы «Осень в Нью-Йорке»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--down-33"
+            data-number="33"
+          >
+            33. У неё «нет плохой погоды»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--down-34"
+            data-number="34"
+          >
+            34. Река из песни Шевчука «Осень»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--down-34"
+            data-number="34"
+          >
+            35. «... забросал меня осеннею листвой...»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--down-36"
+            data-number="36"
+          >
+            36. «Сегодня осень в дверь мне позвонила» (... Рубальская)
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--down-37"
+            data-number="37"
+          >
+            37. Из подаренного ветром крепдешина танцевала в подворотне осень
+            вальс-...»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--down-38"
+            data-number="38"
+          >
+            38. «Осень, осень, в … просим!» (Иван Суриков) вальс-...»
+          </dd>
+
+          <dd
+            class="crossword-clues__list-item crossword-clues__list-item--down-39"
+            data-number="39"
+          >
+            39. Видение, в котором осень танцует вальс-бостон
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <script src="./create.js"></script>
+    <script>
+      const questionsParent = document.querySelector("[data-scrolled-area]");
+      const crossNumCells = document.querySelectorAll("[data-id]");
+      crossNumCells.forEach((item) => {
+        const itemId = item.dataset.id;
+        item.addEventListener("focus", goToQuestion);
+        function goToQuestion() {
+          if (window.innerWidth > 1300) {
+            const needetQuestion = questionsParent.querySelector(
+              `[data-number="${itemId}"]`
+            );
+            needetQuestion.offsetParent.scrollTop = needetQuestion.offsetTop;
+          }
+        }
+      });
+      const invalidInputs = document.querySelectorAll(
+        "input.crossword-board__item"
+      );
+      invalidInputs.forEach((input) => {
+        // input.value = input.getAttribute("pattern")[3];
+        input.addEventListener("input", (e) => {
+          if (input.value.length > input.maxLength)
+            input.value = input.value.slice(0, input.maxLength);
+        });
+      });
+
+      const complite = () => {
+        invalidInputs.forEach(
+          (input) => (input.value = input.getAttribute("pattern")[3])
+        );
+      };
+    </script>
+  </body>
+</html>

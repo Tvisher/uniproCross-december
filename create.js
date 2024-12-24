@@ -1389,27 +1389,16 @@ const res = Object.entries(data)
         for (let index = 1; index <= 26; index++) {
             const isEl = row[1].find(el => el.coll === index);
             if (isEl) {
-                rowText += `<input class="crossword-board__item" type="text" minlength="1" maxlength="1" pattern="^[${isEl.letter.trim().toLocaleLowerCase()}${isEl.letter.toUpperCase()}]{1}$" required="required" value="" id="item${rowNum + 1}-${index}" />`
+                rowText += `#item${rowNum + 1}-${index}:valid ~`
+                // rowText += `<input class="crossword-board__item" type="text" minlength="1" maxlength="1" pattern="^[${isEl.letter.trim().toLocaleLowerCase()}${isEl.letter.toUpperCase()}]{1}$" required="required" value="" id="item${rowNum + 1}-${index}" />`
             } else {
-                rowText += `<span class="crossword-board__item--blank" id="item${rowNum + 1}-${index}" ></span>`;
+                // rowText += `<span class="crossword-board__item--blank" id="item${rowNum + 1}-${index}" ></span>`;
             }
         }
         return rowText;
 
     }).join('')
+console.log(res);
 
-// console.log(res);
-// renderZone.innerHTML = res;
-let rowText = '';
-for (let index = 0; index < 66; index++) {
 
-    rowText += `<span
-                id="label-${index + 1}"
-                class="crossword-board__item-label crossword-board__item-label--${index + 1}"
-                ><span class="crossword-board__item-label-text">${index + 1}</span></span
-              >`
-
-}
-
-console.log(rowText);
 
